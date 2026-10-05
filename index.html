@@ -1696,6 +1696,7 @@ function renderFact() {
     document.getElementById('content').innerHTML = `
       <div class="fact-top">
         <div class="fact-left">
+          <div class="drag-note">You can drag and drop them to reorder.</div>
           <div class="people-line" style="margin-bottom:26px;">${peopleHtml()}</div>
           <div class="line-set">{ ${LETTERS.slice(0,n).join(',  ')} }</div>
           <div class="line-formula">${K(`${n}! = ${expandStr}${f}`)}</div>
@@ -1755,6 +1756,7 @@ function renderPerm() {
     _totalSimple = total; _totalFull = nFac; _uniqueFull = total;
 
     document.getElementById('content').innerHTML = `
+      <div class="drag-note">You can drag and drop them to reorder.</div>
       <div class="people-line">${peopleHtml()}</div>
       ${peopleLineGraphicHtml()}
       <div class="line-set">{ ${LETTERS.slice(0,n).join(',  ')} }</div>
@@ -1827,6 +1829,7 @@ function renderComb() {
     _totalSimple = total; _totalFull = nFac; _uniqueFull = total;
 
     document.getElementById('content').innerHTML = `
+      <div class="drag-note">You can drag and drop them to reorder.</div>
       <div class="people-line">${peopleHtml()}</div>
       ${peopleLineGraphicHtml()}
       <div class="line-set">{ ${LETTERS.slice(0,n).join(',  ')} }</div>
